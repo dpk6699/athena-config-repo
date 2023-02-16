@@ -10,3 +10,9 @@ spring:
       ddl-auto: update
     properties:
       dialect: org.hibernate.dialect.MySQLDialect
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8888/eureka, http://localhost:8888/eureka       
